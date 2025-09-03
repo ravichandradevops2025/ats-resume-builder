@@ -2,9 +2,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/ats-resume-builder/',  // Critical for GitHub Pages subpath
   plugins: [react()],
-  root: '.',           // explicitly set root
   build: {
-    outDir: 'dist',    // output to /dist
+    outDir: 'dist',
   },
 });
